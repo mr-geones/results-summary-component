@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  border: 0px solid lime;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+  background-color: hsla(0, 0%, 0%, 0.9);
+}
+
+main {
+  width: 375px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.reaction-background {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  background-image: url("/assets/images/icon-reaction.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.memory-background {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  background-image: url("/assets/images/icon-memory.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.verbal-background {
+  background-color: hsla(166, 100%, 37%, 0.05);
+  background-image: url("/assets/images/icon-verbal.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.visual-background {
+  background-color: hsla(234, 85%, 45%, 0.05);
+  background-image: url("/assets/images/icon-visual.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.reaction {
+  color: hsla(0, 100%, 67%, 1);
+}
+
+.memory {
+  color: hsla(39, 100%, 56%, 1);
+}
+
+.verbal {
+  color: hsla(166, 100%, 37%, 1);
+}
+
+.visual {
+  color: hsla(234, 85%, 45%, 1);
+}
+
+.summary-data {
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.icon {
+  margin-left: 40px;
+}
+
+.values {
+  float: right;
+  margin-right: 15px;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  margin: 0 auto;
+}
+
+.head {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 360px;
+  text-align: center;
+}
+
+.summary {
+  color: hsl(224, 30%, 27%);
+  margin: 10px 0 25px 0;
+}
+
+.great {
+  color: hsl(0, 0%, 100%);
+  margin: 30px 0 10px 0;
+}
+
+.score {
+  color: hsla(255, 100%, 100%, 0.7);
+}
+
+.result {
+  color: hsla(255, 100%, 100%, 0.7);
+  margin: 10px 0 20px 0;
+}
+
+.wrapper-head {
+  padding: 15px 50px 0px 50px;
+}
+
+.wrapper-body {
+  padding: 15px 30px 0px 30px;
+}
+
+.score-total {
+  display: block;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+}
+
+.score-points {
+  color: hsla(255, 100%, 100%, 0.4);
+}
+
+.precentage {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+
+.precentage-total {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: hsla(0, 0%, 100%, 0);
+  border-radius: 20px;
+  margin-top: 10px;
+  max-width: 375px;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 100%, 76%);
+}
+
+@media (min-width: 765px) {
+  main {
+    width: 750px;
+    border-radius: 30px;
+    height: 500px;
+  }
+  button {
+    margin-top: 40px;
+  }
+  .head {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .header {
+    height: 100%;
+    width: 50%;
+  }
+  .wrapper-head {
+    width: 95%;
+    padding-top: 30px;
+  }
+  .wrapper-body {
+    width: 50%;
+    padding-top: 30px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+  .great {
+    font-size: 30px;
+  }
+  .score {
+    font-size: 18px;
+  }
+  .result {
+    font-size: 24px;
+  }
+  .score-total {
+    font-size: 72px;
+  }
+  .score-points {
+    font-size: 18px;
+  }
+  .summary {
+    font-size: 24px;
+  }
+  .attribution {
+    margin-left: 25%;
+  }
+}
