@@ -180,7 +180,7 @@ button:hover {
 
 .summary--reaction-head {
   color: var(--clr-reaction);
-  background-image: url("/assets/images/icon-reaction.svg");
+  background-image: url("assets/images/icon-reaction.svg");
   background-repeat: no-repeat;
   background-position: 10px;
   padding-left: var(--summary-icon);
@@ -188,7 +188,7 @@ button:hover {
 
 .summary--memory-head {
   color: var(--clr-memory);
-  background-image: url("/assets/images/icon-memory.svg");
+  background-image: url("assets/images/icon-memory.svg");
   background-repeat: no-repeat;
   background-position: 10px;
   padding-left: var(--summary-icon);
@@ -196,7 +196,7 @@ button:hover {
 
 .summary--verbal-head {
   color: var(--clr-verbal);
-  background-image: url("/assets/images/icon-verbal.svg");
+  background-image: url("assets/images/icon-verbal.svg");
   background-repeat: no-repeat;
   background-position: 10px;
   padding-left: var(--summary-icon);
@@ -204,7 +204,7 @@ button:hover {
 
 .summary--visual-head {
   color: var(--clr-visual);
-  background-image: url("/assets/images/icon-visual.svg");
+  background-image: url("assets/images/icon-visual.svg");
   background-repeat: no-repeat;
   background-position: 10px;
   padding-left: var(--summary-icon);
