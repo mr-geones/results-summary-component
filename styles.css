@@ -58,7 +58,7 @@ main {
   border-radius: var(--round-corner-medium);
   filter: drop-shadow(-0.25rem 0.25rem 0.75rem var(--clr-neutral-3));
   border: 0px dashed orange;
-  max-width: 38em;
+  max-width: 44em;
   margin: 5%;
 }
 
