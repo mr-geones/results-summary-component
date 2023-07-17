@@ -3,10 +3,11 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
 
   --clr-reaction: hsl(0, 100%, 67%);
   --clr-memory: hsl(39, 100%, 56%);
@@ -28,26 +29,23 @@
   --clr-neutral-3: hsl(241, 100%, 89%);
   --clr-neutral-4: hsl(224, 30%, 27%);
 
-  --round-corner-medium: 1.5em;
-  --round-corner-small: 0.5em;
+  --round-corner-medium: 1.5rem;
+  --round-corner-small: 0.5rem;
 
-  --summary-icon: 2.5em;
+  --summary-icon: 2.5rem;
 
-  --val: 11em;
+  --val: 11rem;
 
   border: 0px solid magenta;
 }
 
-html,
 body {
-  height: 100%;
-}
-
-body {
+  width: 100%;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
   border: 0px solid magenta;
 }
 
@@ -58,26 +56,26 @@ main {
   border-radius: var(--round-corner-medium);
   filter: drop-shadow(-0.25rem 0.25rem 0.75rem var(--clr-neutral-3));
   border: 0px dashed orange;
-  max-width: 44em;
+  max-width: 44rem;
   margin: 5%;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 button {
   background-color: var(--clr-neutral-4);
   color: var(--clr-neutral-1);
-  font-size: 1em;
-  padding: 0.9em 0;
+  font-size: 1rem;
+  padding: 0.9rem 0;
   border-radius: var(--round-corner-medium);
   width: 100%;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 button:hover {
@@ -103,7 +101,7 @@ button:hover {
 .result--title {
   color: var(--clr-neutral-3);
   font-weight: 700;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.6rem;
 }
 
 .result--points {
@@ -130,12 +128,12 @@ button:hover {
 
 .result--head {
   color: var(--clr-neutral-1);
-  margin: 0.6em 0 0.4em 0;
+  margin: 0.6rem 0 0.4rem 0;
 }
 
 .result--body {
   color: var(--clr-neutral-3);
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
 }
 
 /* 
@@ -156,10 +154,10 @@ button:hover {
 }
 
 .summary--data {
-  padding: 0.9em 0;
+  padding: 0.9rem 0;
   vertical-align: middle;
   border-radius: var(--round-corner-small);
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .summary--reaction-bg-color {
@@ -232,7 +230,7 @@ button:hover {
 */
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6rem;
   text-align: center;
   margin-top: 3%;
   color: var(--clr-neutral-4);
@@ -240,6 +238,8 @@ button:hover {
 
 .attribution a {
   color: var(--clr-gradient-c1);
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 /*
@@ -269,6 +269,6 @@ button:hover {
   }
 
   .result--body {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
