@@ -35,12 +35,14 @@
   --summary-icon: 2.5rem;
 
   --val: 11rem;
+
+  border: 0px solid magenta;
 }
 
-.container {
+body {
   display: grid;
   place-content: center;
-  height: 100vmax;
+  height: 100%;
 }
 
 main {
@@ -54,7 +56,6 @@ main {
   margin: 5%;
 }
 
-h1,
 h2 {
   font-size: 1.3rem;
 }
@@ -71,7 +72,6 @@ button {
   border-radius: var(--round-corner-medium);
   width: 100%;
   margin-top: 2rem;
-  border: none;
 }
 
 button:hover {
@@ -104,19 +104,22 @@ button:hover {
   width: var(--val);
   height: var(--val);
   border-radius: 50%;
-  display: grid;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(var(--clr-gradient-c1), var(--clr-gradient-c2));
   margin: 0 auto;
-  color: hsla(255, 100%, 100%, 0.4);
 }
 
 .result--score {
   display: block;
-  font-size: 4rem;
+  font-size: 60px;
   font-weight: 800;
   color: white;
-  line-height: 4.4rem;
+}
+
+.result--total {
+  color: hsla(255, 100%, 100%, 0.4);
 }
 
 .result--head {
@@ -242,10 +245,11 @@ button:hover {
 */
 
 @media only screen and (max-width: 576px) {
+  html,
   body {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
+    display: block;
+    height: auto;
+    width: auto;
   }
 
   main {

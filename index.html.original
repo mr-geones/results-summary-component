@@ -6,20 +6,25 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
 
   <body>
-    <div class="container">
+    <div>
       <main>
         <!-- Result -->
 
         <div class="result--wrapper">
-          <h1 class="result--title">Your Result</h1>
+          <h2 class="result--title">Your Result</h2>
 
-          <p class="result--points"><span class="result--score">76 </span>of 100</p>
+          <div class="result--points">
+            <div>
+              <span class="result--score">76 </span>
+              <span class="result--total"> of 100</span>
+            </div>
+          </div>
 
           <h3 class="result--head">Great</h3>
           <p class="result--body">You scored higher than 65% of the people who have taken these tests.</p>
