@@ -243,6 +243,7 @@ button:hover {
 
 @media only screen and (max-width: 576px) {
   .container {
+    display: block;
     height: auto;
   }
   main {
