@@ -37,10 +37,18 @@
   --val: 11rem;
 }
 
-.container {
-  display: grid;
-  place-content: center;
+body {
+  width: 100%;
+  height: 100vh;
   height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 44rem;
 }
 
 main {
@@ -50,7 +58,7 @@ main {
   border-radius: var(--round-corner-medium);
   filter: drop-shadow(-0.25rem 0.25rem 0.75rem var(--clr-neutral-3));
   border: 0px dashed orange;
-  max-width: 44rem;
+  max-width: 100%;
   margin: 5%;
 }
 
@@ -242,9 +250,11 @@ button:hover {
 */
 
 @media only screen and (max-width: 576px) {
-  .container {
+  body {
     display: block;
-    height: auto;
+  }
+  .container {
+    width: 100%;
   }
   main {
     display: block;
